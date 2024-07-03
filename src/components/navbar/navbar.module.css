@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 1rem;
     border-bottom: 1px solid #ccc;
+    height: fit-content;
     .profileSection{
         display: flex;
         justify-content: center;
@@ -62,5 +65,68 @@
                 }
             }
         }
+        @media (width < 660px) {
+            display: none;
+        }
+    };
+    .menuMobile{
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #000;
+        padding: 1rem;
+        border-radius: 5px;
+        display: flex;
+        font-size: 1.5rem;
+        height: fit-content;
+        transition: all .3 ease-in-out;
+        .mobileLinksList{
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+            align-items: center;
+            list-style: none;
+            flex-direction: column;
+            .mobileLi{
+                width: 100%;
+                line-height: 80px;
+                background-color: #121212;
+                display: block;
+                text-align: center;
+                .mobileLink{
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    display: block;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: .3s;
+                    color: #fff;
+                    &:hover{
+                        background-color: #ccc;
+                        padding: .5rem;
+                        border-radius: 5px;
+                    }
+                };
+                .active{
+                    background-color: #ccc;
+                    height: 100%;
+                    border-radius: 5px;
+                    color: #000;
+                    font-weight: bold;
+                    box-shadow: 2px 2px 1px #555;
+                    display: block;
+                    cursor: pointer;
+                    transition: .3s;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+    .btnMenuMobile{
+        @media (width > 660px) {
+            display: none;
+        };
     }
 }

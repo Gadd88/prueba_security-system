@@ -1,0 +1,29 @@
+{
+    "userProfile": {
+      "name": "Juan Pérez",
+      "profileImage": "profile.jpg",
+      "aboutMe": "Soy un desarrollador junior apasionado por la tecnología y el diseño. Me especializo en el desarrollo front-end con React y siempre estoy en busca de nuevos retos que me permitan crecer profesionalmente. Disfruto colaborar en proyectos innovadores y aprender de mis compañeros de equipo.",
+      "interests": [
+        "Desarrollo web",
+        "Diseño de interfaces de usuario",
+        "Inteligencia artificial",
+        "Aprendizaje automático",
+        "Fotografía",
+        "Viajes",
+        "Lectura de ciencia ficción",
+        "Videojuegos"
+      ],
+      "location": {
+        "country": "Argentina",
+        "province": "Buenos Aires",
+        "city": "La Plata"
+      },
+      "contact": {
+        "email": "juan.perez@example.com",
+        "phone": "+54 9 11 1234-5678",
+        "linkedin": "https://www.linkedin.com/in/juan-perez",
+        "github": "https://github.com/juanperez"
+      }
+    }
+  }
+  
