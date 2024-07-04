@@ -16,7 +16,17 @@
         margin-bottom: 1rem;
         font-style: italic;
     }
+    .section_contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+        @media (width < 770px){
+            gap: 2rem;
+            flex-direction: column;
+        }
+    }
     @media (width < 770px){
-        padding: 1rem;
+        padding: 1rem;  
     }
 }

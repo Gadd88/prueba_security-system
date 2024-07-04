@@ -2,7 +2,7 @@ import { ProfileCard } from '@/components'
 import React from 'react'
 import userData from '@/userData.json'
 import styles from './page.module.css'
-export default async function Profile() {
+export default function Profile() {
 
   return (
     <main className={styles.main}>

@@ -1,4 +1,5 @@
-export * from './contact-form/contact-form'
+export * from './contact/contact-form'
+export * from './contact/contact-socials'
 export * from './navbar/navbar'
 export * from './footer/footer'
 export * from './profile-card/profile-card'
