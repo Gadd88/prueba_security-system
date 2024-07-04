@@ -1,0 +1,133 @@
+.container {
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.box {
+  width: calc(80% - 10px);
+  background: #121212;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.box_info {
+  padding: 1rem;
+  .image {
+    margin: 10px auto;
+    height: 150px;
+    width: 150px;
+    background: #8e44ad;
+    padding: 3px;
+    border-radius: 50%;
+    .profilePic {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+      }
+  }
+  .box_info_name {
+    margin: 10px 0 3px 0;
+    color: #8e44ad;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .box_info_about {
+    margin-top: 8px;
+    letter-spacing: 1pt;
+    text-align: justify;
+  }
+}
+.box_interest {
+  padding: 1rem;
+  .box_interest_title {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .box_interest_list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    .box_interest_item {
+      border-radius: 5px;
+      background: #8e44ad;
+      color: #fff;
+      padding: 5px 10px;
+      width: fit-content;
+      margin: 5px 0;
+      display: inline-block;
+    }
+  }
+}
+
+
+.btns {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  .button {
+    background: #8e44ad;
+    width: 100%;
+    padding: 9px 0px;
+    outline: none;
+    border: 2px solid #8e44ad;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #8e44ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s linear;
+    &:hover {
+      color: #fff;
+    }
+    &:first-child {
+      background: none;
+      margin-right: 5px;
+      &:hover {
+        background: #8e44ad;
+        color: #fff;
+      }
+    }
+    &:last-child {
+      color: #fff;
+      margin-left: 5px;
+    }
+  }
+}
+@media (max-width: 1045px) {
+  .container .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 710px) {
+  .box {
+    width: 100%;
+    flex-direction: column;
+    .box_info{
+        padding: 2px;
+        .box_info_about{
+            text-align: start;
+        }
+    }
+    .box_interest{
+        padding: 2px;
+    }
+  }
+  .btns{
+    width: 100%;
+  }
+}

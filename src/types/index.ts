@@ -49,3 +49,29 @@ export type ApiUser = {
     phone: string
     cell: string
 }
+
+export interface UserProfile {
+    userProfile: UserProfileClass;
+}
+
+export interface UserProfileClass {
+    name:         string;
+    profileImage: string;
+    aboutMe:      string;
+    interests:    string[];
+    location:     Location;
+    contact:      Contact;
+}
+
+export interface Contact {
+    email:    string;
+    phone:    string;
+    linkedin: string;
+    github:   string;
+}
+
+export interface Location {
+    country:  string;
+    province: string;
+    city:     string;
+}

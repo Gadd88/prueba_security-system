@@ -1,7 +1,7 @@
 {
     "userProfile": {
-      "name": "Juan Pérez",
-      "profileImage": "profile.jpg",
+      "name": "Matias Saade",
+      "profileImage": "/assets/profile_pic.jpg",
       "aboutMe": "Soy un desarrollador junior apasionado por la tecnología y el diseño. Me especializo en el desarrollo front-end con React y siempre estoy en busca de nuevos retos que me permitan crecer profesionalmente. Disfruto colaborar en proyectos innovadores y aprender de mis compañeros de equipo.",
       "interests": [
         "Desarrollo web",
@@ -16,13 +16,13 @@
       "location": {
         "country": "Argentina",
         "province": "Buenos Aires",
-        "city": "La Plata"
+        "city": "Mercedes"
       },
       "contact": {
-        "email": "juan.perez@example.com",
-        "phone": "+54 9 11 1234-5678",
-        "linkedin": "https://www.linkedin.com/in/juan-perez",
-        "github": "https://github.com/juanperez"
+        "email": "matiassaade@gmail.com",
+        "phone": "+5493704632110",
+        "linkedin": "https://www.linkedin.com/in/matias-saade",
+        "github": "https://github.com/gadd88"
       }
     }
   }

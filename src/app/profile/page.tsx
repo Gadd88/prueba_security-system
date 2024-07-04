@@ -1,6 +1,7 @@
-import { ProfileCard } from '@/components/profile-card/profile-card'
+import { ProfileCard } from '@/components'
 import { ApiUser } from '@/types'
 import React from 'react'
+import userData from '@/userData.json'
 
 const getProfile = async (): Promise<ApiUser> => {
     const response = await fetch('https://randomuser.me/api/?nat=mx')
@@ -14,7 +15,7 @@ export default async function Profile({...props}) {
   return (
     <main>
         <h1>Mi Perfil</h1>
-        <ProfileCard data={data} />
+        <ProfileCard data={userData} />
     </main>
   )
 }
