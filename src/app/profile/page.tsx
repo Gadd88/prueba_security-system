@@ -1,21 +1,16 @@
 import { ProfileCard } from '@/components'
-import { ApiUser } from '@/types'
 import React from 'react'
 import userData from '@/userData.json'
-
-const getProfile = async (): Promise<ApiUser> => {
-    const response = await fetch('https://randomuser.me/api/?nat=mx')
-    const result = await response.json()
-    return result.results[0]
-}
-export default async function Profile({...props}) {
-
-    const data = await getProfile()
+import styles from './page.module.css'
+export default async function Profile() {
 
   return (
-    <main>
-        <h1>Mi Perfil</h1>
-        <ProfileCard data={userData} />
+    <main className={styles.main}>
+      <h1 className={styles.title}>Mi Perfil</h1>
+      <p className={styles.subtitle}>Bienvenido a la Landing Page realizada para la prueba técnica de Security & System</p>
+      <section className={styles.section_profile}>
+        <ProfileCard data={userData} />  
+      </section>
     </main>
   )
 }

@@ -1,23 +1,21 @@
 .container {
-  max-width: 1100px;
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
+  margin: 2rem auto;
 }
 .box {
-  width: calc(80% - 10px);
   background: #121212;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 20px 30px;
-  border-radius: 5px;
+  border-radius: 1rem;
 }
 .box_info {
   padding: 1rem;
+  width: 50%;
   .image {
     margin: 10px auto;
     height: 150px;
@@ -46,7 +44,8 @@
   }
 }
 .box_interest {
-  padding: 1rem;
+  padding: 3rem 1rem;
+  width: 50%;
   .box_interest_title {
     margin: 10px 0;
     text-align: center;
@@ -57,6 +56,7 @@
     gap: 10px;
     flex-wrap: wrap;
     .box_interest_item {
+      cursor: default;
       border-radius: 5px;
       background: #8e44ad;
       color: #fff;
@@ -64,6 +64,11 @@
       width: fit-content;
       margin: 5px 0;
       display: inline-block;
+      transition: all 0.3s linear;
+      &:hover {
+        background: #fff;
+        color: #8e44ad;
+      }
     }
   }
 }
@@ -114,17 +119,24 @@
   }
 }
 @media (max-width: 710px) {
-  .box {
+  .container{
+    margin: 1rem 0;
     width: 100%;
+  }
+  .box {
     flex-direction: column;
+    padding: 10px;
+    width: 100%;
     .box_info{
+        width: 100%;
         padding: 2px;
         .box_info_about{
             text-align: start;
         }
     }
     .box_interest{
-        padding: 2px;
+      width: 100%;
+      padding: 2px;
     }
   }
   .btns{

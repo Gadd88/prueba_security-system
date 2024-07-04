@@ -8,10 +8,7 @@ export const ProfileCard = ({ data }: {data: UserProfile}) => {
   const { userProfile } = data
   return (
     <section>
-      {/* <figure>
-            <Image src={userProfile.profileImage} alt='user profile pic' width={150} height={150} />
-      </figure>
-      <p>{userProfile.aboutMe}</p>
+      {/* 
       <ul>
           <li>{userProfile.name}</li>
           <li>{userProfile.contact.email}</li>
