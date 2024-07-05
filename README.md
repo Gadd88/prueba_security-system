@@ -1,33 +1,66 @@
-## Prueba Técnica Frontend Security & System
 
-Para 
+# Prueba Técnica Frontend Security & System
+
+Prueba técnica realizada utilizando NextJS 14 y React. 
+
+### Maquetar una página web que incluya:
+- Una cabecera con el nombre del usuario y una imagen de perfil.
+- Una sección de "Sobre mí" con una breve descripción del usuario.
+- Una lista de intereses del usuario.
+- Un formulario de contacto con campos para nombre, email y mensaje.
+
+
+### Requerimientos:
+- Utilizar CSS (sin frameworks como Bootstrap) para estilizar la página. 
+- Debe ser responsiva y verse bien en dispositivos móviles y de escritorio.
+- Crear la estructura del proyecto con Next.js 14.
+- Implementar los componentes necesarios para cada sección de la página (por ejemplo, Header, About, Interests, ContactForm).
+- Implementar el formulario de contacto con validación básica y mostrar un mensaje de éxito al enviar (no es necesario manejar envíos reales).
+
+#### Requerimientos extras:
+- Utilizar CSS Modules para el manejo de estilos.
+- Agregar animaciones o transiciones suaves para mejorar la experiencia del usuario.
+- Incluir tests básicos con Jest o Testing Library.
+
+## Instalación
+
+Para utilizar el proyecto, puedes clonar este repositorio con el comando
+
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/Gadd88/prueba_security-system
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Luego de ello, debes ingresar en la carpeta creada y correr el comando de instalación de dependencias
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd prueba_security-system
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Esto instalará lo necesario para ejecutar el proyecto con el siguiente comando. 
 
-## Learn More
+```bash
+  npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Podrás visualizarlo corriendo en el puerto por defecto http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Caracteristica
 
-## Deploy on Vercel
+- Responsivo, vistas mobile, tablet y desktop
+- Utiliza CSS Modules para el estilado
+- Si bien, no era necesario utilizar el App Router de NextJS, decidí emplearlo para darle un "sentido" a la barra de navegación, en la página principal ya estan cargados todos los componentes creados, pero a través de la navbar, uno puedo ingresar a una ruta especifica donde solo encontrará el componente correspondiente.
+- Tests de formulario y perfil
+- Utilizada libreria de sonner para notificaciones toast simulando funciones del formulario
+- Utilizado react-icons para iconos de redes sociales
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tests
+
+Para correr los tests preparados puedes utilizar el comando
+
+```bash
+  npm run test
+```
+
