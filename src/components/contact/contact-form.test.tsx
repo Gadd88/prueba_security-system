@@ -1,6 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import {ContactForm} from './contact-form'
-// import '@testing-library/jest-dom/extend-expect';
 
 describe('ContactForm', () => {
   it('renders the contact form', () => {

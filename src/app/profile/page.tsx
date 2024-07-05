@@ -1,5 +1,4 @@
 import { ProfileCard } from '@/components'
-import React from 'react'
 import userData from '@/userData.json'
 import styles from './page.module.css'
 export default function Profile() {

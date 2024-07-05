@@ -1,5 +1,7 @@
+export * from './contact/contact'
 export * from './contact/contact-form'
 export * from './contact/contact-socials'
+export * from './hero/hero'
 export * from './navbar/navbar'
 export * from './footer/footer'
 export * from './profile-card/profile-card'

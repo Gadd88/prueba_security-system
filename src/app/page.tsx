@@ -1,9 +1,6 @@
-import Image from "next/image";
+import { ContactComponent, Hero, ProfileCard } from "@/components";
+import userData from '@/userData.json';
 import styles from "./page.module.css";
-import { ContactForm, ProfileCard } from "@/components";
-import userData from '@/userData.json'
-import { Hero } from "@/components/hero/hero";
-import { ContactComponent } from "@/components/contact/contact";
 
 export default function Home() {
   return (
